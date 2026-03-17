@@ -9,14 +9,12 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import LoadingScreen from "@/components/LoadingScreen";
-import DataRain from "@/components/DataRain";
 
 const Index = () => {
   return (
     <>
       <LoadingScreen />
       <div className="relative">
-        <DataRain />
         <Navbar />
         <main>
           <Hero />
