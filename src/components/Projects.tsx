@@ -117,7 +117,7 @@ const Projects = () => {
                   </DialogContent>
                 </Dialog>
 
-                {project.demo ? (
+                {project.demo && (
                   <a
                     href={project.demo}
                     target="_blank"
@@ -126,10 +126,6 @@ const Projects = () => {
                   >
                     <ExternalLink size={15} /> {t("projects.liveDemo")}
                   </a>
-                ) : (
-                  <span className="text-xs text-muted-foreground italic">
-                    {t("projects.comingSoon")}
-                  </span>
                 )}
               </div>
             </motion.div>
